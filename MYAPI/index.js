@@ -26,8 +26,8 @@ app.get('/', async (req, res) => {
 //Getting tables from PorteSQL
 
 const tables = [
-  'attack_types', 'attackers', 'audits', 'facilities', 'incident_attackers', 'maintenance_logs', 'materials',
-   'nuclear_devices', 'nuclear_incidents', 'personnel', 'security_incidents', 'uranium_stocks'
+  'facilities', 'nuclear_devices', 'materials', 'components', 'personnel',
+'maintenance_logs', 'audits', 'security_incidents', 'treaty_compliance', 'device_movements'
 ];
 
 
@@ -46,9 +46,9 @@ for (const table of tables) {
 
 //Count Routes
 const countTables = [
-  'attack_types', 'attackers', 'audits', 'facilities', 'incident_attackers',
-  'maintenance_logs', 'materials', 'nuclear_devices', 'nuclear_incidents',
-  'personnel', 'security_incidents', 'uranium_stocks'
+   'facilities', 'nuclear_devices', 'materials', 'components', 'personnel',
+'maintenance_logs', 'audits', 'security_incidents', 'treaty_compliance', 'device_movements'
+
 ];
 
 // Dynamic GET count routes (keeps underscores in URLs)
@@ -62,6 +62,8 @@ for (const table of countTables) {
     }
   });
 }
+
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
