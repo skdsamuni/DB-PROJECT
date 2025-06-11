@@ -133,3 +133,153 @@
     color: #000;
   }
 
+
+
+
+  /* Nuclear-themed button styles */
+
+.btn {
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 4px rgba(0, 255, 0, 0.3);
+  color: #00ffcc;
+  background-color: transparent;
+  border: 1px solid #00ffcc;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgba(0, 255, 0, 0.1);
+  color: #00ffcc;
+  border-color: #00ffcc;
+  box-shadow: 0 0 12px #00ffcc;
+  transform: scale(1.05);
+}
+
+/* Button Groups (e.g., Show/Hide) */
+.btn-group .btn {
+  margin: 0 2px;
+}
+
+/* Primary (Load All) and Danger (Hide All) special styles */
+.btn-primary {
+  color: #000;
+  background-color: #00ffcc;
+  border-color: #00ffcc;
+  box-shadow: 0 0 8px #00ffcc;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #00e6b8;
+  color: #000;
+  box-shadow: 0 0 16px #00ffcc;
+  transform: scale(1.05);
+}
+
+.btn-outline-danger {
+  color: #ff4c4c;
+  border-color: #ff4c4c;
+  background-color: transparent;
+}
+
+.btn-outline-danger:hover {
+  background-color: rgba(255, 76, 76, 0.1);
+  color: #ff4c4c;
+  box-shadow: 0 0 12px #ff4c4c;
+  transform: scale(1.05);
+}
+
+/* Smaller buttons */
+.btn-sm {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+}
+
+
+
+/* Carousel arrow icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 255, 0, 0.7);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-size: 75% 75%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(255, 0, 0, 0.85);
+}
+
+/* General carousel card styling */
+.carousel .card {
+  max-width: 500px; /* Adjust as needed */
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.75); /* Nuclear dark glass style */
+  border: 1px solid #0f0;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.carousel .card:hover {
+  transform: scale(1.03);
+}
+
+/* Wrapper to center carousel */
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 20px;
+}
+
+/* Individual carousel item card (larger size) */
+.carousel-item .card {
+  max-width: 900px;
+  min-height: 200px;
+  
+
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid #00ff00;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item .card:hover {
+  transform: scale(1.03);
+}
+
+/* Card Content */
+.card-title {
+  font-size: 1.75rem;
+  color: #00ffcc;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.card-body p {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .carousel-item .card {
+    width: 90%;
+    height: auto;
+
+  }
+
+  .card-body p {
+    font-size: 2rem;
+  }
+}
+

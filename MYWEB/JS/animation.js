@@ -13,3 +13,8 @@
       if (e.key === 'ArrowRight') slideTable(1);
       if (e.key === 'ArrowLeft') slideTable(-1);
     });
+
+
+
+
+    
